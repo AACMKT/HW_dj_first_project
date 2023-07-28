@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Текущее время</title>
+</head>
+<body>
+    <h2><b style="color: green">{{ info }}</b></h2>
+    <h1>На другие страницы</h1>
+    {% for title, url in pages.items %}
+        <a href="{{ url }}">{{ title }}</a>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
